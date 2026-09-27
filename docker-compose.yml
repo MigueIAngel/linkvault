@@ -1,0 +1,45 @@
+services:
+  db:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_USER: linkvault
+      POSTGRES_PASSWORD: linkvault
+      POSTGRES_DB: linkvault
+    ports:
+      - "5435:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U linkvault"]
+      interval: 5s
+      timeout: 3s
+      retries: 10
+
+  # Applies migrations and seeds demo data, then exits.
+  migrate:
+    build:
+      context: .
+      target: deps
+    command: sh -c "npx prisma migrate deploy && npx prisma db seed"
+    environment:
+      DATABASE_URL: postgresql://linkvault:linkvault@db:5432/linkvault
+    depends_on:
+      db:
+        condition: service_healthy
+
+  app:
+    build: .
+    environment:
+      DATABASE_URL: postgresql://linkvault:linkvault@db:5432/linkvault
+      AUTH_SECRET: ${AUTH_SECRET:-change-me-please-generate-a-real-secret}
+      AUTH_TRUST_HOST: "true"
+      AUTH_GITHUB_ID: ${AUTH_GITHUB_ID:-}
+      AUTH_GITHUB_SECRET: ${AUTH_GITHUB_SECRET:-}
+    ports:
+      - "3000:3000"
+    depends_on:
+      migrate:
+        condition: service_completed_successfully
+
+volumes:
+  pgdata:
