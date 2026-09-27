@@ -11,6 +11,10 @@ A bookmark manager built with the **Next.js 16 App Router**. Paste a URL and Lin
 
 ![Dashboard](docs/links.jpg)
 
+**Live demo:** https://linkvault-demo.onrender.com (demo account `demo@linkvault.dev` / `demo12345`).
+
+> Hosted on Render's free plan: the first request after a period of inactivity can take up to a minute while the service wakes up. Demo data is reset on every restart.
+
 ## Features
 
 - **Server Components + Server Actions**: no REST layer. Mutations are type-safe functions called from forms
