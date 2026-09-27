@@ -1,0 +1,75 @@
+{
+  "Metadata": {
+    "title": "LinkVault · Guarda y organiza tus enlaces",
+    "description": "Un gestor de marcadores rápido hecho con Next.js, Prisma y Auth.js."
+  },
+  "Nav": {
+    "login": "Iniciar sesión",
+    "register": "Registrarse",
+    "logout": "Cerrar sesión",
+    "dashboard": "Mis enlaces",
+    "language": "English"
+  },
+  "Landing": {
+    "badge": "Next.js 16 · Server Actions · Prisma",
+    "title": "Tus enlaces, organizados y siempre a mano.",
+    "subtitle": "Guarda cualquier cosa de la web. LinkVault obtiene el título y la descripción por ti, y las etiquetas y la búsqueda te ayudan a encontrarlo.",
+    "cta": "Empieza gratis",
+    "demo": "Probar la demo",
+    "features": {
+      "fetch": { "title": "Metadatos automáticos", "text": "Pega una URL y el título y la descripción se obtienen en el servidor." },
+      "tags": { "title": "Etiquetas y favoritos", "text": "Agrupa enlaces con etiquetas y fija los que usas a diario." },
+      "search": { "title": "Búsqueda instantánea", "text": "Filtra por texto, etiqueta o favoritos con URLs compartibles." }
+    }
+  },
+  "Auth": {
+    "loginTitle": "Bienvenido de nuevo",
+    "registerTitle": "Crea tu cuenta",
+    "name": "Nombre",
+    "email": "Correo electrónico",
+    "password": "Contraseña",
+    "login": "Iniciar sesión",
+    "register": "Crear cuenta",
+    "github": "Continuar con GitHub",
+    "or": "o",
+    "noAccount": "¿No tienes cuenta?",
+    "haveAccount": "¿Ya tienes cuenta?",
+    "demoHint": "Demo: demo@linkvault.dev / demo12345",
+    "errors": {
+      "invalidCredentials": "Correo o contraseña incorrectos.",
+      "emailTaken": "Ese correo ya está registrado.",
+      "invalid": "Revisa los campos marcados.",
+      "generic": "Algo salió mal. Inténtalo de nuevo."
+    }
+  },
+  "Links": {
+    "title": "Mis enlaces",
+    "count": "{count, plural, =0 {Sin enlaces} one {# enlace} other {# enlaces}}",
+    "add": "Guardar enlace",
+    "urlPlaceholder": "Pega una URL, p. ej. https://nextjs.org",
+    "tagsPlaceholder": "Etiquetas (separadas por comas)",
+    "saving": "Obteniendo información…",
+    "search": "Buscar enlaces…",
+    "all": "Todos los enlaces",
+    "favorites": "Favoritos",
+    "tags": "Etiquetas",
+    "empty": "Aún no tienes enlaces. ¡Guarda el primero arriba!",
+    "noResults": "Ningún enlace coincide con tus filtros.",
+    "edit": "Editar",
+    "delete": "Eliminar",
+    "save": "Guardar",
+    "cancel": "Cancelar",
+    "favorite": "Añadir a favoritos",
+    "unfavorite": "Quitar de favoritos",
+    "confirmDelete": "¿Eliminar este enlace?",
+    "titleLabel": "Título",
+    "descriptionLabel": "Descripción",
+    "savedAt": "Guardado {date}",
+    "loadMore": "Cargar más",
+    "errors": {
+      "invalidUrl": "Introduce una URL http(s) válida.",
+      "duplicate": "Ya guardaste este enlace.",
+      "generic": "No se pudo guardar el enlace."
+    }
+  }
+}
