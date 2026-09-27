@@ -1,0 +1,75 @@
+{
+  "Metadata": {
+    "title": "LinkVault · Save and organize your links",
+    "description": "A fast bookmark manager built with Next.js, Prisma and Auth.js."
+  },
+  "Nav": {
+    "login": "Log in",
+    "register": "Sign up",
+    "logout": "Log out",
+    "dashboard": "My links",
+    "language": "Español"
+  },
+  "Landing": {
+    "badge": "Next.js 16 · Server Actions · Prisma",
+    "title": "Your links, organized and always at hand.",
+    "subtitle": "Save anything from the web. LinkVault fetches the title and description for you, and tags and search keep it easy to find.",
+    "cta": "Start for free",
+    "demo": "Try the demo",
+    "features": {
+      "fetch": { "title": "Automatic metadata", "text": "Paste a URL and the title and description are fetched on the server." },
+      "tags": { "title": "Tags & favorites", "text": "Group links with tags and pin the ones you use every day." },
+      "search": { "title": "Instant search", "text": "Filter by text, tag or favorites with shareable URLs." }
+    }
+  },
+  "Auth": {
+    "loginTitle": "Welcome back",
+    "registerTitle": "Create your account",
+    "name": "Name",
+    "email": "Email",
+    "password": "Password",
+    "login": "Log in",
+    "register": "Create account",
+    "github": "Continue with GitHub",
+    "or": "or",
+    "noAccount": "Don't have an account?",
+    "haveAccount": "Already have an account?",
+    "demoHint": "Demo: demo@linkvault.dev / demo12345",
+    "errors": {
+      "invalidCredentials": "Invalid email or password.",
+      "emailTaken": "That email is already registered.",
+      "invalid": "Please check the highlighted fields.",
+      "generic": "Something went wrong. Please try again."
+    }
+  },
+  "Links": {
+    "title": "My links",
+    "count": "{count, plural, =0 {No links} one {# link} other {# links}}",
+    "add": "Save link",
+    "urlPlaceholder": "Paste a URL, e.g. https://nextjs.org",
+    "tagsPlaceholder": "Tags (comma separated)",
+    "saving": "Fetching info…",
+    "search": "Search links…",
+    "all": "All links",
+    "favorites": "Favorites",
+    "tags": "Tags",
+    "empty": "No links yet. Save your first one above!",
+    "noResults": "No links match your filters.",
+    "edit": "Edit",
+    "delete": "Delete",
+    "save": "Save",
+    "cancel": "Cancel",
+    "favorite": "Add to favorites",
+    "unfavorite": "Remove from favorites",
+    "confirmDelete": "Delete this link?",
+    "titleLabel": "Title",
+    "descriptionLabel": "Description",
+    "savedAt": "Saved {date}",
+    "loadMore": "Load more",
+    "errors": {
+      "invalidUrl": "Enter a valid http(s) URL.",
+      "duplicate": "You already saved this link.",
+      "generic": "Could not save the link."
+    }
+  }
+}
